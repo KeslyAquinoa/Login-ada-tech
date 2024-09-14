@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor01: rgb(211, 79, 101);
+    --cor02: rgb(0, 255, 255);
+}
+
+/* Mobile-first layout */
+body {
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside img {
+    width: 80%; /* Ajustar para telas pequenas */
+    margin-bottom: 1rem;
+}
+
+aside h1 {
+    font-size: 2.8rem; /* Fonte menor para dispositivos móveis */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+aside span, main span {
+    color: var(--cor01);
+}
+
+main {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.367);
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 2rem; /* Ajustar tamanho da fonte */
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .actions a {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.489);
+    background-color: var(--cor02);
+    width: 80%; /* Ajuste para largura da tela */
+    height: 3.5rem;
+    font-size: 1.6rem;
+    margin: 1rem;
+    border-radius: 7px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .actions a + a {
+    background-color: var(--cor01);
+    margin-top: 2rem;
+}
+
+footer {
+   text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+ footer a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(146, 83, 83);
+}
+
+
+/* Estilos para telas maiores (tablet e desktop) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .content {
+        display: grid;
+        grid-template-areas:
+            ". . .  . ."
+            ". hero . forms ."
+            ". hero  . forms ."
+            ". . .  . .";
+    /*     grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto; */
+        grid-template-rows: 20rem;
+    }
+
+    aside {
+        grid-area: hero;
+        justify-self: center;
+    }
+
+    aside h1 {
+        font-size: 4rem;
+    }
+
+    aside img {
+        width: 35rem;
+    }
+
+    main {
+        grid-area: forms;
+        padding: 4.4rem 5.7rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    main h2 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+
+    main .actions a {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.489);
+        width: 25rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .content {
+        display: grid;
+        grid-template-areas:
+            ". . .  . ."
+            ". hero  . forms ."
+            ". hero  . forms ."
+            ". . . . .";
+    /*     grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto; */
+        grid-template-rows: 20rem;
+    }
+
+    aside {
+        grid-area: hero;
+        justify-self: center;
+    }
+
+    aside img {
+        width: 35rem;
+    }
+
+    main {
+        grid-area: forms;
+        padding: 4.4rem 5.7rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    main h2 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+
+    main .actions a {
+        width: 25rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.489);
+    }
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    @media screen and (min-width:1024px) {
+
+         .content {
+        display: grid;
+        grid-template-areas:
+            ". . .  . ."
+            ". hero . forms ."
+            ". hero  . forms ."
+            ". . .  . .";
+    /*     grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto; */
+        grid-template-rows: 20rem;
+    }
+
+    aside {
+        grid-area: hero;
+        justify-self: center;
+    }
+
+    aside h1 {
+        font-size: 4rem;
+    }
+
+    aside img {
+        width: 30rem;
+    }
+
+    main {
+        grid-area: forms;
+        padding: 4.4rem 5.7rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    main h2 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+
+    main .actions a {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.489);
+        width: 25rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .content {
+        display: grid;
+        grid-template-areas:
+            ". . .  . ."
+            ". hero  . forms ."
+            ". hero  . forms ."
+            ". . . . .";
+    /*     grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto; */
+        grid-template-rows: 20rem;
+    }
+
+    aside {
+        grid-area: hero;
+        justify-self: center;
+    }
+
+    aside img {
+        width: 45rem;
+    }
+
+    main {
+        grid-area: forms;
+        padding: 4.4rem 5.7rem;
+        max-width: 60rem;
+        height: 40rem;
+        margin: 0 auto;
+    }
+
+    main h2 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+
+    .actions{
+        margin: 4rem;
+    }
+
+    main .actions a {
+        width: 35rem;
+        height: 4.5rem;
+        font-size: 1.6rem;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.489);
+    }
+    
+    footer {
+        text-align: left;
+        margin-top: 6rem;
+    }
+
+
+}
+    
+    
+
+
+
+
+
