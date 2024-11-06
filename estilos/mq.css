@@ -1,0 +1,92 @@
+@media screen and (min-width:768px) { 
+
+    main{
+     display: flex;
+     flex-flow: row nowrap; 
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+
+  section{
+    margin-right: 5%;
+    width:60vw
+  }
+
+  div > a{
+    width: 50vw;
+  }
+   
+
+   img{
+    width: 40vw;
+   }
+
+
+
+
+   #pag2{
+        width: 40%;
+        height: 70%;   
+   }
+
+   input{
+    max-width:32vw;
+   }
+
+   .cadastropag2{
+    max-width: 32vw;
+}
+
+}
+
+@media screen and (min-width:1024px) {
+    main{
+        margin: auto;
+        max-width: 1000px;
+       
+
+        display: flex;
+        gap: 15%;
+        flex-flow: row nowrap;
+        justify-content:center;
+        align-items: center;
+        
+    }
+
+    section{
+        width: 45%;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    img{
+        width: 30vw;
+    }
+
+    div > a{
+        width: 20vw;
+    }
+
+    aside > h1{
+        font-size: 3em;
+    }
+
+
+    #pag2{
+        min-width:60%;
+        height: 57%;   
+   }
+
+   input{
+    max-width:30vw;
+   }
+
+   .cadastropag2{
+    max-width: 30vw;
+}
+
+}
