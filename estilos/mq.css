@@ -55,8 +55,8 @@
     }
 
     section{
-        width: 45%;
-        height: 80vh;
+        min-width: 60%;
+        height: 57%;
 
         display: flex;
         flex-direction: column;
@@ -68,7 +68,7 @@
     }
 
     div > a{
-        width: 20vw;
+        width: 30vw;
     }
 
     aside > h1{
